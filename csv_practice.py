@@ -90,6 +90,9 @@ with open(SALES_FILE, "r") as f:
 
 print(f"Total revenue: ${dict_total:.2f}")
 
+# csv.reader is easier for simple CSV files because we access values by position.
+# csv.DictReader is better when we have more columns because we can access values by name.
+
 print("--- Exercise 7 ---")
 
 summary = {}
